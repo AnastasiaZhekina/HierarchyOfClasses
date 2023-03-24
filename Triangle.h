@@ -5,8 +5,8 @@
 class Triangle : public Figure {
 protected:
 	int a, b, c;
-	int A, B , C;
-	string name ;
+	int A, B, C;
+	string name;
 public:
 
 	Triangle(string p_name, int p_a, int p_b, int p_c, int p_A, int p_B, int p_C);
@@ -21,4 +21,5 @@ public:
 	Triangle();
 
 	void print_info() override;
+	
 };
