@@ -7,7 +7,6 @@ Rhombus::Rhombus(string p_name, int p_a, int p_b, int p_c, int p_d, int p_A, int
 			name = p_name;
 		}
 		else {
-			cout << "Неверные данные. Ромб (все стороны равны, углы A,C и B,D попарно равны)" << endl;
-			exit(1);
+			throw domain_error( "Неверные данные. Ромб (все стороны равны, углы A,C и B,D попарно равны)");
 		}
 	}

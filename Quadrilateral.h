@@ -22,4 +22,5 @@ public:
 	int getxD();
 
 	void print_info() override;
+	
 };
