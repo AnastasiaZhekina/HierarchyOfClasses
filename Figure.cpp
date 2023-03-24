@@ -3,12 +3,13 @@
 #include <string>
 using namespace std;
 
-Figure::Figure(int n, string a) : side(n), s(a) {}
- void Figure::show3() {
-	cout << s << endl << "Количество сторон: " << side << endl;
+ string Figure::gets() { return name; }
+int Figure::getxa() { return a; }
+int Figure::getxA() { return A; }
+void Figure::print_info() {
+	cout << gets() << endl << "Стороны: " << getxa() << endl << "Углы: " << getxA();
 }
-Figure::Figure()
-{
-	side = 0;
-	s = "Правильная";
-}
+	Figure::Figure(){ name = "Фигура";
+	 a = 0;
+	 A = 0;
+	}

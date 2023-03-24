@@ -3,7 +3,6 @@
 #include "Figure.h"
 #include "Triangle.h"
 #include "Rectangular.h"
-#include "Rectangular2.h"
 #include "Isosceles.h"
 #include "Equilateral.h"
 #include "Quadrilateral.h"
@@ -18,59 +17,39 @@ int main() {
 
 	setlocale(LC_ALL, "Russian");
 
-	Figure fig;
-	cout << "Фигура: " << endl;
-	fig.show3();
-
-	cout << endl;
 
 	Triangle tri;
-	cout << "Треугольник: " << endl;
-	tri.show3();
-	tri.show();
+	tri.print_info();
 
-	Rectangular rec;
-	cout << "Прямоугольный треугольник: " << endl;
-	rec.show3();
-	rec.show();
+	Figure* rec = new Rectangular("Прямоугольный треугольник:", 10, 20, 10, 50, 60, 90);
+	rec->print_info();
 
-	Rectangular2 rec2;
-	cout << "Прямоугольный треугольник: " << endl;
-	rec2.show3();
-	rec2.show();
+	Figure* iso = new Isosceles("Равнобедренный треугольник: ", 10, 20, 10, 50, 60, 50);
+	iso->print_info();
 
-	Isosceles iso;
-	cout << "Равнобедренный треугольник: " << endl;
-	iso.show3();
-	iso.show();
+	Figure* equ = new Equilateral("Равносторонний треугольник: ", 30, 30, 30, 60, 60, 60);
+	equ->print_info();
 
-	Equilateral equ;
-	cout << "Равносторонний треугольник: " << endl;
-	equ.show3();
-	equ.show();
+	Figure* qua = new Quadrilateral;
+	qua->print_info();
 
-	Quadrilateral qua;
-	cout << "Четырёхугольник: " << endl;
-	qua.show3();
-	qua.show2();
+	Figure* rect = new Rectangle("Прямоугольник: ", 10, 20, 10, 20, 90, 90, 90, 90);
+	rect->print_info();
 
-	Rectangle rect;
-	cout << "Прямоугольник: " << endl;
-	rect.show3();
-	rect.show2();
+	Figure* squ = new Square("Квадрат: ", 20, 20, 20, 20, 90, 90, 90, 90);
+	squ->print_info();
 
-	Square squ;
-	cout << "Квадрат: " << endl;
-	squ.show3();
-	squ.show2();
+	Figure* par = new Parallelogram("Параллелограмм: ", 20, 30, 20, 30, 30, 40, 30, 40);
+	par->print_info();
 
-	Parallelogram par;
-	cout << "Параллелограмм: " << endl;
-	par.show3();
-	par.show2();
+	Figure* rho = new Rhombus("Ромб: ", 30, 30, 30, 30, 30, 40, 30, 40);
+	rho->print_info();
 
-	Rhombus rho;
-	cout << "Ромб: " << endl;
-	rho.show3();
-	rho.show2();
+	delete rec;
+	delete iso;
+	delete equ;
+	delete qua;
+	delete rect;
+	delete par;
+	delete rho;
 };

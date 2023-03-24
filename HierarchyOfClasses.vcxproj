@@ -135,7 +135,6 @@
     <ClCompile Include="Quadrilateral.cpp" />
     <ClCompile Include="Rectangle.cpp" />
     <ClCompile Include="Rectangular.cpp" />
-    <ClCompile Include="Rectangular2.cpp" />
     <ClCompile Include="Rhombus.cpp" />
     <ClCompile Include="Square.cpp" />
     <ClCompile Include="Triangle.cpp" />
@@ -148,7 +147,6 @@
     <ClInclude Include="Quadrilateral.h" />
     <ClInclude Include="Rectangle.h" />
     <ClInclude Include="Rectangular.h" />
-    <ClInclude Include="Rectangular2.h" />
     <ClInclude Include="Rhombus.h" />
     <ClInclude Include="Square.h" />
     <ClInclude Include="Triangle.h" />

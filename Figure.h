@@ -5,13 +5,13 @@ using namespace std;
 
 class Figure {
 protected:
-	int side;
-	string s;
+	string name;
+	int a ;
+	int A;
 public:
-	Figure(int n, string a)
-		;
+	virtual string gets();
+	virtual	int getxa();
+	virtual int getxA();
+	virtual void print_info();
 	Figure();
-
-	virtual void show3();
-
 };
