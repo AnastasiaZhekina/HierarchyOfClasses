@@ -1,0 +1,3 @@
+cmake_minimum_required (VERSION 3.22.0)
+project ("HierarchyOfClasses")
+add_executable (HierarchyOfClasses  "HierarchyOfClasses.cpp" "Figure.h" "Triangle.h" "Rectangular.h" "Isosceles.h" "Equilateral.h" "Quadrilateral.h" "Rectangle.h" "Square.h" "Parallelogram.h" "Rhombus.h" "Figure.cpp" "Triangle.cpp" "Rectangular.cpp" "Isosceles.cpp" "Equilateral.cpp" "Quadrilateral.cpp" "Rectangle.cpp" "Square.cpp" "Parallelogram.cpp" "Rhombus.cpp")
